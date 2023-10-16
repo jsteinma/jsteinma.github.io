@@ -6,7 +6,8 @@
 }
 
 /* class 'external' created for only external links, to
-differentiate them from other links throughout the document */
+differentiate them from other links throughout the document.
+Link colours to match website theme */
 /*proper CSS structure for editing of links influenced from
 https://www.w3schools.com/css/css_link.asp*/
 /* unvisited external link */
@@ -70,7 +71,8 @@ ul.navi li {
 	float: left;
 }
 /* This style was originally influenced from
-https://www.w3schools.com/css/css_navbar_horizontal.asp */
+https://www.w3schools.com/css/css_navbar_horizontal.asp 
+uppercase letters and spacing for easier readability */
 ul.navi li a {
 	display: block;
 	color: #404040;
@@ -95,7 +97,8 @@ ul.navi li a:hover:not(.current) {
 	background-color: #dcdcdc;
 }
 /* main heading on document showing the overall purpose/
-topic of the website  */
+topic of the website  with uppercase letters and letter 
+spacing for easier readability */
 h1{
 	background-color: #00a0a0;
 	padding: 19px;
