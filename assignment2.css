@@ -1,0 +1,220 @@
+/* setting font of entire document to a sans-serif type */
+/* setting general background colour of entire document */
+* {
+	font-family: Trebuchet, sans-serif;
+	background-color: #fff8e7
+}
+
+/* class 'external' created for only external links, to
+differentiate them from other links throughout the document */
+/*proper CSS structure for editing of links influenced from
+https://www.w3schools.com/css/css_link.asp*/
+/* unvisited external link */
+ul.external a:link {
+	color: #70d1d0;
+	text-decoration: none;
+}
+
+/* visited external link */
+ul.external a:visited {
+	color: #006767;
+	text-decoration: none;
+}
+
+/* mouse hover over external link */
+ul.external a:hover {
+	color: #1d282a;
+	text-decoration:underline;
+}
+
+/* selected external link */
+ul.external a:active {
+	text-decoration: none;
+	background-color: #008a8a;
+}
+
+/* changing the bullet type to circle for external links */
+ul.external {
+	list-style-type:circle;
+}
+
+/* class 'school' created to divide each school into section that
+will be styled the same*/
+.school {
+	padding-left: 25px;
+	padding-top: 4px;
+	padding-bottom: 8px;
+}
+
+/* general edits of the id for the email link*/	
+#email a {
+	text-decoration: none;
+	color: black;
+	padding: 2px;
+}
+
+/* Nagivation bar to seperate pages with class 'navi' */
+/* This format was influenced from 
+https://www.w3schools.com/css/css_navbar_horizontal.asp */
+ul.navi {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #f8f8f8;
+}
+
+/*ensuring the list of options in the navigation bar stay 
+to the left*/
+ul.navi li {
+	float: left;
+}
+/* This style was originally influenced from
+https://www.w3schools.com/css/css_navbar_horizontal.asp */
+ul.navi li a {
+	display: block;
+	color: #404040;
+	text-align: center;
+	letter-spacing: 2px;
+	padding: 18px;
+	text-decoration: none;
+	text-transform: uppercase;
+	background-color: #f8f8f8;
+	font-size: 14px;
+}
+
+/*navigation bar current class added to show a specific 
+colour for the activated page*/
+ul.navi li a.current {
+	background-color: #9f9fff;
+}
+	
+/*navigation bar hover not added to show a specific colour
+when hovering over the non-activated page*/
+ul.navi li a:hover:not(.current) {
+	background-color: #dcdcdc;
+}
+/* main heading on document showing the overall purpose/
+topic of the website  */
+h1{
+	background-color: #00a0a0;
+	padding: 19px;
+	text-align: center;
+	letter-spacing: 6px;
+	font-weight: bold;
+	margin-bottom: 16px;
+	text-transform: uppercase;
+	font-size: 32px;
+}
+
+/* first main section on additional page*/
+h2{
+	padding-left:20px;
+	color: #191919;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+/* main sub headings made to show more emphasis over 
+other sub headings throughout document */
+h3{
+	text-align: center;
+	color: grey;
+	font-size: 19px;
+	font-weight: normal;
+}
+
+/*specific editing for the overall look of the email box
+to make it different from general h3 heading used, including
+an added coloured tab to the left to make it stand out*/
+/* coloured tab was influenced by an example from 
+https://www.w3schools.com/css/css_link.asp */
+h3#email{
+	text-align: left;
+	border-left: 8px solid green;
+	font-size: 16px;
+	font-weight: normal;
+	margin-left: 4px;
+}
+
+/* sub headings within document sections */
+h4{
+	color: black;
+	font-size: 18px;
+	margin: 10px;
+	margin-top: 20px;
+	margin-bottom: 6px;
+	font-weight: bold;
+	display: block;
+}
+
+/* declarations for headings within div */	
+h5 {
+	font-size: 16px;
+	margin-bottom: 0px;
+	margin-top: 5px;
+	
+}
+
+/* declarations for default ul selector */
+ul {
+	margin-top: 6px;
+	margin-bottom: 0px;
+	padding-bottom: 6px;
+	font-size: 15px;
+}
+
+/*id to allow the column width of the first column to be larger
+than the second column compared to the overall width (100%)*/
+#first {
+	width: 60%;
+}
+
+/* Table width and proper external CSS rules understood from stack 
+exchange example: https://stackoverflow.com/questions/32711110/how-to-change-table-width-using-css */
+/* table example influenced from https://www.w3schools.com/css/css_table_style.asp */
+table, th, td {
+	margin:10px;
+	margin-top: 20px;
+	padding: 9px;
+	width:600px;
+	border:1px solid black;
+	border-collapse: collapse;
+	background-color: #ebe6d9;
+}
+
+/*Changing the background colour of headings to match website theme*/
+th {
+	background-color: #d5d6cd;
+}
+
+/*Changing the text size of data to be smaller than heading*/
+td {
+	font-size: 14px;
+}
+
+/* Original inspiration after seeing Rylee Goertz website, then 
+followed demo/example from https://www.w3schools.com/howto/howto_css_image_gallery_scroll.asp 
+for horizontal image gallery*/
+div#picscroll {
+	margin: 20px;
+	white-space: nowrap;
+	overflow: auto;
+}
+
+/* adds indents to all paragraphs to show structure as well as 
+left and right margins to avoid text being too close to edge of page */
+p {
+	text-indent: 25px;
+	margin: 20px;
+	margin-bottom: 16px;
+	margin-top: 12px;
+	font-size: 15px;
+}
+
+/* 'ref' class to edit the references text singularily */
+#ref {
+	font-style: italic;
+	text-indent: 0;
+	margin: 24px;
+}
