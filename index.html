@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang=en-CA>
+<head>
+	<meta charset="UTF-8"> 	<!-- added to fix error when validating from 
+	file - help from website https://stackoverflow.com/questions/17935819/why-is-this-html5-document-invalid -->
+	<title>index.html</title>
+	<link rel = "stylesheet" href = "assignment2.css">
+</head>
+<body>
+
+<!-- the navigation bar was originally influenced from 
+https://www.w3schools.com/css/css_navbar_horizontal.asp -->
+<!-- MenuOption Begin -->
+<ul class="navi">
+	<li><a class="current" href="index.html">Resume</a></li>
+	<li><a href="additional.html">Additional</a></li>
+</ul>
+<!-- MenuOption End -->
+<!-- the navigation bar options were put as links into a list,
+with the current page (i.e. index.html) marked as 'active' by a 
+class created with CSS -->
+
+<h1>Jordan Steinman</h1>
+<h3>GIS Applications Specialist Student</h3>
+
+<!-- got the idea of a clickable email link from 
+https://www.w3schools.com/html/html_links.asp and
+made an id for the email to edit it since it is also 
+being used as a seperate heading elsewhere -->
+<h3 id="email"><a href="mailto:myemail@email.ca">myemail@email.ca</a>
+</h3>
+
+<!-- using a block-level break in the page to represent a section
+change -->
+<hr>
+
+<!-- biography will be its own section just as multiple indented
+paragraphs -->
+<h4>Bio</h4>
+
+<p>I am currently a student at The North Pole training to be 
+one of Santa's helpers. I have gotten a lot of experience 
+with gathering the right tools to make the sturdiest toy,
+and collecting the correct colours of paint to show the best
+balance and contrast that is most appealing to the human eye.</p>
+<p>I am continuously improving my teamwork skill, as my current
+training has me constantly working with others as well as 
+singing songs with everyone as we work.</p>
+
+<hr>
+
+<!-- current skills were put into a bulletted list with default
+bullets, for easier readability -->
+<h4>Skills</h4>
+<ul>
+	<li>Organizational</li>
+	<li>Tries her best at school</li>
+	<li>Something else</li>
+	<li>Loves the outdoors</li>
+</ul>
+
+<hr>
+
+<h4>Education</h4>
+<div class="school">
+	<h5>Some school</h5>
+		<ul>
+			<li>hello</li>
+			<li>this is where my classes would be</li>
+		</ul>
+</div>
+<!-- each school is edited from being grouped into a class 
+'school' created with CSS -->
+
+<div class="school">
+	<h5>Another school</h5>
+		<ul>
+			<li>some more classes</li>
+			<li>and skills</li>
+		</ul>
+</div>
+
+<hr>
+
+<h4>Certifications</h4>
+
+<!-- table setup was first influenced by 
+https://www.w3schools.com/html/html_tables.asp -->
+<!-- TableOption Begin -->
+<table>
+  <tr>
+    <th id="first">Certifications and Licences</th>
+    <th>Expiry Date</th> 
+  </tr>
+  <tr>
+    <td>CPR & First Aid</td>
+    <td>February 2024</td>
+  </tr>
+  <tr>
+    <td>Bear Aware</td>
+    <td>None</td>
+  </tr>
+  <tr>
+    <td>Boating License</td>
+    <td>None</td>
+  </tr>
+</table>
+<!-- TableOption End -->
+<!-- table created to show my different certifications and
+licenses, with the first column edited with an id ;first'
+created with CSS to allow the column to be larger -->
+
+<hr>
+
+<h4>External Websites</h4>
+
+<!-- The 3 websites are links to my favourite college (fleming),
+cute animals (otters), and good food (dominos lava cakes) -->
+<!-- proper absolute link format referenced from W3schools -->
+<!-- LinksOption Begin -->
+<ul class="external">
+	<li><a href="https://flemingcollege.ca/" target="_blank">My favourite school</a></li>
+	<li><a href="https://nationalzoo.si.edu/animals/north%2damerican%2driver%2dotter" target="_blank">Some awesome animals</a></li>
+	<li><a href="https://www.mashed.com/449162/copycat%2Ddominos%2dchocolate%2Dlava%2Dcrunch%2Dcake%2Drecipe%2f" target="_blank">Some great food</a></li>
+</ul>
+<!-- LinksOption End -->
+<!-- 3 external websites with absolute path names put into a 
+list, with each opening in a new tab. The entire list is grouped 
+by a class 'external' created in CSS, to be able to edit the look
+of external links in the document to show they are unique -->
+
+</body>
+</html>
