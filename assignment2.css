@@ -221,3 +221,13 @@ p {
 	text-indent: 0;
 	margin: 24px;
 }
+
+.maxnorm {
+	max-width: 281px;
+	max-height: 500px;
+}
+
+.maxski {
+	max-width: 238px;
+	max-height: 500px;
+{
